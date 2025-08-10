@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Gmail">
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-box">
+                <span class="material-icons search-icon">search</span>
+                <input type="text" placeholder="Search mail">
+                <span class="material-icons filter-icon">tune</span>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="icon-btn">
+                <span class="material-icons">help_outline</span>
+            </button>
+            <button class="icon-btn">
+                <span class="material-icons">settings</span>
+            </button>
+            <button class="icon-btn">
+                <span class="material-icons">apps</span>
+            </button>
+            <div class="profile-pic">
+                <img src="https://via.placeholder.com/32" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="compose-btn">
+                <span class="material-icons">add</span>
+                Compose
+            </button>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-item active">
+                    <span class="material-icons">inbox</span>
+                    <span class="nav-text">Inbox</span>
+                    <span class="count">99+</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">star</span>
+                    <span class="nav-text">Starred</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">schedule</span>
+                    <span class="nav-text">Snoozed</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">send</span>
+                    <span class="nav-text">Sent</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">description</span>
+                    <span class="nav-text">Drafts</span>
+                    <span class="count">2</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">expand_more</span>
+                    <span class="nav-text">More</span>
+                </div>
+            </nav>
+
+            <div class="storage-info">
+                <div class="storage-text">
+                    <span>1.2 GB of 15 GB used</span>
+                </div>
+                <div class="storage-bar">
+                    <div class="storage-progress"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Email List -->
+        <main class="email-list">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="toolbar-left">
+                    <input type="checkbox" class="select-all">
+                    <button class="icon-btn" title="Archive">
+                        <span class="material-icons">archive</span>
+                    </button>
+                    <button class="icon-btn" title="Report spam">
+                        <span class="material-icons">report</span>
+                    </button>
+                    <button class="icon-btn" title="Delete">
+                        <span class="material-icons">delete</span>
+                    </button>
+                    <button class="icon-btn" title="Mark as read">
+                        <span class="material-icons">drafts</span>
+                    </button>
+                    <button class="icon-btn" title="Add to Tasks">
+                        <span class="material-icons">add_task</span>
+                    </button>
+                    <button class="icon-btn" title="Move to">
+                        <span class="material-icons">drive_file_move</span>
+                    </button>
+                    <button class="icon-btn" title="Labels">
+                        <span class="material-icons">label</span>
+                    </button>
+                    <button class="icon-btn" title="More">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+                </div>
+                <div class="toolbar-right">
+                    <span class="email-count">1-50 of 1,000</span>
+                    <button class="icon-btn">
+                        <span class="material-icons">chevron_left</span>
+                    </button>
+                    <button class="icon-btn">
+                        <span class="material-icons">chevron_right</span>
+                    </button>
+                    <button class="icon-btn">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </button>
+                    <button class="icon-btn" title="Refresh">
+                        <span class="material-icons">refresh</span>
+                    </button>
+                    <button class="icon-btn" title="More">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Email Items -->
+            <div class="email-items">
+                <div class="email-item unread">
+                    <input type="checkbox" class="email-checkbox">
+                    <button class="star-btn">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="important-btn">
+                        <span class="material-icons">label_important</span>
+                    </button>
+                    <div class="sender">GitHub</div>
+                    <div class="subject">
+                        <span class="subject-text">[Security] New sign-in to your account</span>
+                        <span class="preview"> - We noticed a new sign-in to your GitHub account from a new device...</span>
+                    </div>
+                    <div class="date">10:30 AM</div>
+                </div>
+
+                <div class="email-item">
+                    <input type="checkbox" class="email-checkbox">
+                    <button class="star-btn starred">
+                        <span class="material-icons">star</span>
+                    </button>
+                    <button class="important-btn">
+                        <span class="material-icons">label_important</span>
+                    </button>
+                    <div class="sender">LinkedIn</div>
+                    <div class="subject">
+                        <span class="subject-text">You have new connection requests</span>
+                        <span class="preview"> - 3 people want to connect with you on LinkedIn...</span>
+                    </div>
+                    <div class="date">9:45 AM</div>
+                </div>
+
+                <div class="email-item">
+                    <input type="checkbox" class="email-checkbox">
+                    <button class="star-btn">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="important-btn important">
+                        <span class="material-icons">label_important</span>
+                    </button>
+                    <div class="sender">Netflix</div>
+                    <div class="subject">
+                        <span class="subject-text">New shows added this week</span>
+                        <span class="preview"> - Check out the latest movies and TV shows we've added...</span>
+                    </div>
+                    <div class="date">8:20 AM</div>
+                </div>
+
+                <div class="email-item unread">
+                    <input type="checkbox" class="email-checkbox">
+                    <button class="star-btn">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="important-btn">
+                        <span class="material-icons">label_important</span>
+                    </button>
+                    <div class="sender">Amazon</div>
+                    <div class="subject">
+                        <span class="subject-text">Your order has been shipped</span>
+                        <span class="preview"> - Great news! Your recent order has been shipped and is on its way...</span>
+                    </div>
+                    <div class="date">Yesterday</div>
+                </div>
+
+                <div class="email-item">
+                    <input type="checkbox" class="email-checkbox">
+                    <button class="star-btn">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="important-btn">
+                        <span class="material-icons">label_important</span>
+                    </button>
+                    <div class="sender">Google</div>
+                    <div class="subject">
+                        <span class="subject-text">Security alert for your Google Account</span>
+                        <span class="preview"> - We noticed some unusual activity in your Google Account...</span>
+                    </div>
+                    <div class="date">Yesterday</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Panel -->
+        <aside class="right-panel">
+            <div class="panel-icons">
+                <button class="panel-icon active">
+                    <span class="material-icons">schedule</span>
+                </button>
+                <button class="panel-icon">
+                    <span class="material-icons">assignment</span>
+                </button>
+                <button class="panel-icon">
+                    <span class="material-icons">contacts</span>
+                </button>
+                <button class="panel-icon">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Compose Modal -->
+    <div class="compose-modal" id="composeModal">
+        <div class="compose-header">
+            <span>New Message</span>
+            <div class="compose-actions">
+                <button class="icon-btn" title="Minimize">
+                    <span class="material-icons">minimize</span>
+                </button>
+                <button class="icon-btn" title="Fullscreen">
+                    <span class="material-icons">open_in_full</span>
+                </button>
+                <button class="icon-btn compose-close" title="Close">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="compose-body">
+            <div class="compose-field">
+                <input type="email" placeholder="Recipients" class="to-field">
+            </div>
+            <div class="compose-field">
+                <input type="text" placeholder="Subject" class="subject-field">
+            </div>
+            <div class="compose-editor">
+                <div contenteditable="true" class="editor" data-placeholder="Compose email..."></div>
+            </div>
+        </div>
+        
+        <div class="compose-footer">
+            <button class="send-btn">
+                Send
+                <span class="material-icons">send</span>
+            </button>
+            <div class="compose-tools">
+                <button class="icon-btn" title="Formatting options">
+                    <span class="material-icons">format_color_text</span>
+                </button>
+                <button class="icon-btn" title="Attach files">
+                    <span class="material-icons">attach_file</span>
+                </button>
+                <button class="icon-btn" title="Insert link">
+                    <span class="material-icons">insert_link</span>
+                </button>
+                <button class="icon-btn" title="Insert emoji">
+                    <span class="material-icons">mood</span>
+                </button>
+                <button class="icon-btn" title="More options">
+                    <span class="material-icons">more_vert</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
